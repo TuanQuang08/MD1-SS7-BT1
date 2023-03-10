@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = prompt("Nhập đoạn văn bản: ");
+    let arr2 =arr.toString();
+    let lowerCheck = /[a-z]/;
+    let upperCheck = /[A-Z]/;
+    let result = [];
+    for (let i = 0; i<arr2.length;i++){
+        if(arr2[i].match(lowerCheck)){
+            result.push(arr2[i].toUpperCase());
+        }else if(arr2[i].match(upperCheck)){
+            result.push(arr2[i].toLowerCase());
+        }
+    }
+    console.log(arr2);
+    console.log(result.join());
+</script>
+</html>
